@@ -30,7 +30,6 @@ body {
     height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
     height: 150vh;
     min-width: 250px;
@@ -156,7 +155,6 @@ body {
 
 
 
-/* Main Content */
 .main-content {
     flex-grow: 1;
 }
@@ -365,7 +363,6 @@ body {
     color: var(--description-text);
 }
 
-/* Scrollbar styling */
 .notes-grid::-webkit-scrollbar {
     width: 5px;
     margin-left: 20px;
@@ -394,7 +391,6 @@ body {
     margin-left: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .container {
         flex-direction: column;
