@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div>
+                <div class="header">
+                    <div style="width: 50px; height: 50px; border-radius: 30px; background-color: #d5d3d08b; opacity: 0.5;"></div>
+                    <div style="border-radius: 30px; background-color: #d5d3d08b; width: 120px; height: 20px; opacity: 0.5;"></div>
+                </div>
+                
+                <ul>
+                    <li><i class="fas fa-th-large fa-xl" style="color: #ffffff;"></i>Overview<div class="arrow-right"></div></li>
+                    <li><i class="fa-regular fa-calendar fa-xl" style="color: #ffffff;"></i>Tasks<div class="arrow-right"></div></li>
+                    <li><i class="fa-regular fa-file-lines fa-xl" style="color: #ffffff;"></i> Documents<div class="arrow-right"></div></li>
+                    <li><i class="fas fa-sticky-note fa-xl"></i> Notes<div class="arrow-right"></div></li>
+                    <li><i class="fas fa-chart-line fa-xl"></i> Output<div class="arrow-right"></div></li>
+                    <li><i class="fas fa-headset fa-xl" style="color: #ffffff;"></i> Support<div class="arrow-right"></div></li>
+                </ul>
+
+                <hr class="line">
+
+                <ul class="note-types">
+                    <li><i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>Projects</li>
+                    <li><i class="fas fa-solid fa-circle fa-2xs" style="color: var(--business-color);"></i>Business</li>
+                    <li><i class="fas fa-solid fa-circle fa-2xs" style="color: var(--personal-color);"></i>Personal</li>
+                    <li class="add-new"><i class="fas fa-solid fa-plus" style="color: #ffffff"></i><span>Add new</span></li>
+                </ul>
+
+                <hr class="line">
+
+               
+            </div>
+            
+            <div class="sidebar-bottom">
+                <div class="network-container">
+                    <a href="https://www.facebook.com/"><i class="fas fa-brands fa-facebook-f" title="Facebook"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-twitter" title="Twitter"></i></a> 
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in" title="LinkedIn"></i></a>
+                    
+                </div>
+               <span>© 2025 All rights reserved</span> 
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="top-right">
+                    <img src="utils/user.png" alt="Avatar">
+                    <div class="user">Hello, Peter!</div>
+                    <div class="notification"><i class="fas fa-bell"></i></div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+             <div class="notes-controll">
+                <div class="filter-buttons">
+                    <button id="all">All</button>
+                    <button id="projects">Projects</button>
+                    <button id="buisiness">Business</button>
+                    <button id="personal">Personal</button>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                    <span class="add-note">
+                        Add new note
+                    </span>
+                </div>
+             </div>
+           
+
+            <!-- Notes Grid -->
+            <div class="notes-grid">
+                <!-- Note 1 (Text) -->
+                <div class="note">
+                    <span class="date">23 June, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--business-color);"></i>
+                        <h4>The monkey-rope</h4>
+                    </div>
+                    <p>Being the savage's bowsman, that is, the person, who pulled the bow-oar.</p>
+                </div>
+
+                <!-- Note 2 (Image) -->
+                <div class="note-personal">
+                    <span class="date">20 June, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--personal-color);"></i>
+                        <h4>Being the savage's bowsman, that is, the person, who pulled the bow-oar.
+                            <span> </span>
+                            <i class="fa-regular fa-circle-play fa-xl" style="color: #8981D8;"></i></h4>
+                    </div>
+                </div>
+
+                <!-- Note 3 (Text + Image) -->
+                <div class="note-projects">
+                    <span class="date">15 June, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>The monkey-rope</h4>
+                    </div>
+                    <ol>
+                        <li>
+                            Being the bowsman
+                        </li>
+                        <li>
+                            The person who pulled the bow-oar.
+                        </li>
+                    </ol>
+                </div>
+                <div class="note-projects">
+                    <span class="date">12 June, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>New workplace</h4>
+                    </div>
+                    <img src="utils/reader.jpg" alt="Workplace">
+                </div>
+                <div class="note-projects">
+                    <span class="date">1 June, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>Vacation!</h4>
+                    </div>
+                    <img src="utils/vacation.png" alt="Vacation">
+                </div>
+                <div class="note">
+                    <span class="date">25 May, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--business-color);"></i>
+                        <h4>The monkey-rope</h4>
+                    </div>
+                    <p>Being the savage's bowsman, that is, the person, who pulled the bow-oar.</p>
+                </div>
+                <div class="note-projects">
+                    <span class="date">15 June, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>New workplace</h4>
+                    </div>
+                    <img src="utils/workplace2.jfif" alt="Workplace">
+                </div>
+                <div class="note-projects">
+                    <span class="date">20 May, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>The monkey-rope</h4>
+                    </div>
+                    <ol>
+                        <li>
+                            Being the bowsman
+                        </li>
+                        <li>
+                            The person who pulled the bow-oar.
+                        </li>
+                    </ol>
+                </div>
+                <div class="note-personal">
+                    <span class="date">13 May, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--personal-color);"></i>
+                        <h4>That is, the person, who pulled the bow-oar, being the savage.
+                            <span> </span>
+                            <i class="fa-regular fa-circle-play fa-xl" style="color: #8981D8;"></i></h4>
+                    </div>
+                </div>
+                <div class="note-projects">
+                    <span class="date">8 May, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>The monkey-rope</h4>
+                    </div>
+                    <ol>
+                        <li>
+                            Being the bowsman
+                        </li>
+                        <li>
+                            The person who pulled the bow-oar.
+                        </li>
+                    </ol>
+                </div>
+                <div class="note">
+                    <span class="date">2 May, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--business-color);"></i>
+                        <h4>The monkey-rope</h4>
+                    </div>
+                    <p>Being the savage's bowsman, that is, the person, who pulled the bow-oar.</p>
+                </div>
+                <div class="note-projects">
+                    <span class="date">15 June, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>New workplace</h4>
+                    </div>
+                    <img src="utils/workplace3.jfif" alt="Workplace">
+                </div>
+                <div class="note-projects">
+                    <span class="date">27 April, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>Vacation!</h4>
+                    </div>
+                    <img src="utils/vacation.png" alt="Vacation">
+                </div>
+                <div class="note-projects">
+                    <span class="date">21 April, 2017</span>
+                    <div class="note-header">
+                        <i class="fas fa-solid fa-circle fa-2xs" style="color: var(--projects-color);"></i>
+                        <h4>The monkey-rope</h4>
+                    </div>
+                    <ol>
+                        <li>
+                            Being the bowsman
+                        </li>
+                        <li>
+                            The person who pulled the bow-oar.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
